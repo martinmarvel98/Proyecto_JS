@@ -104,3 +104,103 @@ let nombreCompleto = nombre + " " + apellido;
 console.log("Hola, ¿Como estas? ", nombreCompleto);
 
 alert("Hola ¿Como estas? "+ nombreCompleto);
+
+
+//si condicion
+if (true){
+    console.log("vas a ver este mensaje");
+}
+
+if (false){
+    console.log("no vas a ver este mensaje");
+}
+
+let unNumero = 5
+
+//con (unNumero == 5) comparamos si unNumero es igual a 5
+if (unNumero == 5){
+    console.log("vas a ver este mensaje");
+}
+
+//con (unNumero == 6) comparamos si unNumero es igual a 6
+if (unNumero == 6){
+    console.log("no vas a ver este mensaje");
+}
+
+//if else
+let unColor = "Rojo"
+
+if (unColor == "Rojo"){
+    console.log("el color es Rojo");
+}else{
+    console.log("el color NO es Rojo");
+}
+
+let nombreUsuario = prompt("Ingresar nombre de usuario");
+
+if (nombreUsuario == "") {
+    alert("No ingresaste el nombre de usuario");
+}
+else{
+    alert("Nombre de usuario ingresado " + nombreUsuario);
+}
+
+//condiciones anidadas
+let precio = 100.5;
+if (precio < 20) {
+    alert ("el precio es menor que 20");
+}
+else if(precio < 50) {
+    alert("el precio es menor que 50");
+}
+else if (precio < 100) {
+    alert("el precio es menor que 100");
+}
+else {
+    alert("el precio es mayor que 100");
+}
+
+
+//variables boolean
+let number = 10;
+let esMayor5 = (number > 5); //su valor sera ture
+if ("es valida") {
+
+    alert("es boolean true");
+}
+
+//operadores logicos
+/*
+let nombreIngresado = prompt("Ingresar nombre");
+let apellidoIngresado = prompt("Ingresar apellido");
+
+if ((nombreIngresado !="") && (apellidoIngresado !="")) {
+    alert("Nombre: "+nombreIngresado +"Apellido: "+apellidoIngresado);
+}else {
+    alert("Error: Ingresar nombre y apellido");
+}
+*/
+
+/*
+let nombreIngresado = prompt("Ingresar nombre");
+if ((nombreIngresado == "MARTIN") || (nombreIngresado == "martin")) {
+    alert("El nombre ingresado es Martin");
+}else {
+    alert("El nombre ingresado NO ES Martin")
+}
+*/
+
+/*let nombreIngresado = prompt("Ingresar nombre");
+if ((nombreIngresado !="") && (nombreIngresado == "MARTIN") || (nombreIngresado == "martin")){
+    alert("Hola Martin");
+}else {
+    alert("Error: Ingresar nombre valido");
+}
+*/
+
+let nombreIngresadoo = prompt("Ingresar nombre");
+if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MARTIN") || (nombreIngresadoo == "martin"))){
+    alert("Hola Martin");
+}else {
+    alert("Error: Ingresar nombre valido");
+}
