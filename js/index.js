@@ -1,4 +1,4 @@
-alert('Hola mundo!');
+//alert('Hola mundo!');
 
 /* operaciones básicas 
 
@@ -24,12 +24,14 @@ let resultadoC = textoA + BLANCO + textoB;
 let nombreIngresado = prompt("Ingrese su nombre");
 */
 
-/* CONSOLA
+/*
+CONSOLA
 
 console.log("Mensaje de prueba");
 let nombre = "Martín"
 console.log(nombre)
 */
+
 
 /* ALERT 
 
@@ -39,6 +41,7 @@ alert('Hola Martín!');
 let numero = 15; //number
 let cadenaDeTexto = "MARTIN PALONSKY"; //string
 let booleanos = true; //boolean
+
 
 
 
@@ -56,3 +59,48 @@ let edad;
 edad = 25;
 
 //las variables siempre debe tener asignada un nombre que haga referencia al dato almacenado.
+
+//console.log
+
+/*
+let numeroUno = 1;
+console.log(numeroUno);
+*/
+
+let numeroUno = 4;
+let numeroDos = 5;
+
+let suma = numeroUno + numeroDos;
+console.log(suma);
+
+let resta = numeroDos - numeroUno;
+console.log(resta);
+
+let producto = numeroUno * numeroDos;
+console.log(producto);
+
+let division = numeroDos / numeroUno;
+console.log(division);
+
+let resto = numeroDos % numeroUno;
+console.log(resto);
+
+//concatenacion
+
+//let nombre = "Martin";
+//let apellido = "Palonsky";
+
+//let nombreCompleto = nombre + " " + apellido;
+//console.log(nombreCompleto);
+
+
+//prompt, consola y alert
+
+let nombre = prompt("Ingrese su nombre");
+let apellido = prompt("Ingrese su apellido");
+
+let nombreCompleto = nombre + " " + apellido;
+
+console.log("Hola, ¿Como estas? ", nombreCompleto);
+
+alert("Hola ¿Como estas? "+ nombreCompleto)
