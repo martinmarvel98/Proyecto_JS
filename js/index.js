@@ -204,3 +204,233 @@ if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MARTIN") || (nombreIngresa
 }else {
     alert("Error: Ingresar nombre valido");
 }
+
+//for (desde; hasta; actualización)
+//desde 0 al 9
+/*
+for (let i = 0; i < 10; i ++) {
+    alert (i);
+}
+
+// desde 1 al 10
+for (let i = 1; i <= 10; i ++) {
+    alert (i);
+}
+//tabla de multiplicar un numero
+//solicitamos un valor al usuario
+let ingresarNumero = parseInt (prompt("Ingresar Numero"));
+//en cada rep, calculamos el numero ingresado x el num  de rep (i)
+for (let i = 1; i <= 10; i ++){
+    let resultado = ingresarNumero * i ;
+    alert(ingresarNumero +" X "+ i +" = "+ resultado);
+}
+
+//turnos
+for (let i = 1; i <= 20; i ++) {
+    let ingresarNombre = prompt("Ingresar nombre");
+    alert(" Turno Nª "+i+" Nombre: "+ingresarNombre);
+}
+
+//break
+for (let i = 1; i <= 10; i ++) {
+    if(i == 5){
+        break;
+    }
+    alert(i);
+}
+//continue
+for (let i = 1; i <= 10; i ++) {
+    if(i == 5){
+        continue;
+    }
+    alert(i);
+}
+*/
+
+//while
+/*
+let repetir = true;
+while(repetir) {
+    console.log("Al infinito y...¡Más allá!");
+}
+*/
+
+//while ESC
+/*
+let entrada = prompt("Ingresar un dato");
+while(entrada != "ESC"){
+    alert("El usuario ingresó "+ entrada);
+    entrada = prompt("Ingresar otro dato");
+}
+*/
+
+//do...while
+let repetir = false;
+do{
+    console.log("¡Solo una vez!");
+}while(repetir)
+
+/*
+let numeros = 0;
+do{
+    numeros = prompt("Ingresar numero");
+    console.log(numeros);
+}while(parseInt(numeros));
+*/
+
+//switch (manera ordenada)
+//switch y while
+/*
+let entrada = ("Ingresar un nombre");
+while(entrada != "ESC" ) {
+    switch (entrada) {
+        case "ANA":
+            alert("HOLA ANA");
+            break;
+        case "JUAN":
+            alert("HOLA JUAN");
+            break;
+        default:
+            alert("¿QUIÉN SOS?")
+            break;
+    }
+    entrada = prompt("Ingresar un nombre");
+}
+*/
+
+//funciones
+/*
+function saludar() {
+    console.log("¡Hola estudiantes!");
+}
+//solicitar un nombre
+let nombreIngresado = prompt("Ingresar nombre")
+alert("El nombre ingresado es " + nombreIngresado)
+
+//si queremos repetir 2 veces, copiar y pegar
+nombreIngresado = prompt("Ingresar nombre")
+alert("El nombre ingresado es " + nombreIngresado)
+nombreIngresado = prompt("Ingresar nombre")
+alert("El nombre ingresado es " + nombreIngresado)
+
+function solicitarNombre(){
+    let nombreIngresado   = prompt("Ingresar nombre")
+    alert("El nombre ingresado es " + nombreIngresado)
+}
+
+
+//parámetros
+conParametros("Hola", "Coder"); // -> “Hola Coder”
+conParametros("Cursando", "JS"); // -> “Cursando JS”
+*/
+
+//ejemplo: sumar y mostrar
+/*
+let resultado = 0;
+
+function sumar(primerNumero, segundoNumero) {
+    resultado = primerNumero + segundoNumero
+}
+
+function mostrar(mensaje) {
+    console.log(mensaje)
+}
+
+sumar(6, 3);            
+mostrar(resultado);
+*/
+
+//resultado de una funcion "return"
+/*
+function sumar(primerNumero, segundoNumero) {
+    return primerNumero + segundoNumero;
+}
+let resultado = sumar(5, 8);
+*/
+/*
+let resultado = sumar(5, 8);
+
+console.log(resultado)  // ⇒ 13
+*/
+
+function calculadora(primerNumero, segundoNumero, operacion) {
+    switch (operacion) {
+        case "+":
+            return primerNumero + segundoNumero;
+            break;
+        case "-":
+            return primerNumero - segundoNumero;
+            break;
+        case "*":
+            return primerNumero * segundoNumero;
+            break;
+        case "/":
+            return primerNumero / segundoNumero;
+            break;
+        default:
+            return 0;
+            break;
+    }
+}
+console.log(calculadora(10, 5, "*"));
+
+//VARIABLES GLOBALES
+let resultado = 0
+function sumar(primerNumero, segundoNumero) {
+    resultado = primerNumero + segundoNumero;
+}
+sumar(5,6);
+//Se puede acceder a la variable resultado porque es global
+console.log(resultado);
+
+//variables locales
+function sumar(primerNumero, segundoNumero) {
+    let resultado = primerNumero + segundoNumero;
+}
+//No se puede acceder a la variable resultado fuera del bloque
+console.log(resultado);
+
+//variables locales y globales
+let nombree = "John Doe" // variable global
+
+function saludar() {
+    let nombree = "Juan Coder" // variable local
+    console.log(nombre)
+}
+//Accede a nombre global
+console.log(nombree)   // → “John Doe”
+
+//Accede a nombre local
+saludar() // → “Juan Coder”
+
+//scope
+function sumar(num1, num2) {
+    let resultado = num1 + num2
+    return resultado
+}
+
+function restar(num1, num2) {
+    let resultado = num1 - num2
+    return resultado
+}
+
+//funciones anónimas
+//Generalmente, las funciones anónimas se asignan a variables declaradas como constantes
+const sumaa  = function (a, b) { return a + b }
+const restaa = function (a, b) { return a - b }
+console.log( sumaa(15,20) )
+console.log( restaa(15,5) )
+
+//funciones flecha
+const sumas  = (a, b) => { return a + b }
+//Si es una función de una sola línea con retorno podemos evitar escribir el cuerpo.
+const restas = (a, b) =>  a - b ;
+console.log( sumas(15,20) )
+console.log( restas(20,5) )
+
+//por ejemplo: calcular precio
+const sumass  = (a, b) => { return a + b }
+//Si es una función de una sola línea con retorno podemos evitar escribir el cuerpo.
+const restass = (a, b) =>  a - b ;
+console.log( sumass(15,20) )
+console.log( restass(20,5) )
