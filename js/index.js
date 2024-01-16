@@ -106,6 +106,7 @@ console.log("Hola, ¿Como estas? ", nombreCompleto);
 alert("Hola ¿Como estas? "+ nombreCompleto);
 
 
+//CONTROL DE FLUJOS
 //si condicion
 if (true){
     console.log("vas a ver este mensaje");
@@ -146,7 +147,7 @@ else{
 }
 
 //condiciones anidadas
-let precio = 100.5;
+let precio = prompt("Ingresar el precio");
 if (precio < 20) {
     alert ("el precio es menor que 20");
 }
