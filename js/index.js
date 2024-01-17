@@ -206,6 +206,8 @@ if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MARTIN") || (nombreIngresa
     alert("Error: Ingresar nombre valido");
 }
 
+
+//CICLOS E INTERACIONES
 //for (desde; hasta; actualización)
 //desde 0 al 9
 /*
@@ -299,7 +301,7 @@ while(entrada != "ESC" ) {
 }
 */
 
-//funciones
+//FUNCIONES
 /*
 function saludar() {
     console.log("¡Hola estudiantes!");
