@@ -199,22 +199,37 @@ if ((nombreIngresado !="") && (nombreIngresado == "MARTIN") || (nombreIngresado 
 }
 */
 
+/*
 let nombreIngresadoo = prompt("Ingresar nombre");
 if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MARTIN") || (nombreIngresadoo == "martin"))){
     alert("Hola Martin");
 }else {
     alert("Error: Ingresar nombre valido");
 }
+*/
 
 
-//CICLOS E INTERACIONES
-//for (desde; hasta; actualización)
-//desde 0 al 9
-/*
-for (let i = 0; i < 10; i ++) {
+//CICLOS E ITERACIONES
+//operador de incremento
+
+let x = 5;
+let y = ++x;
+console.log(y);
+
+//FOR
+//desde 0 al 3
+
+for (let i = 0; i < 4; i ++) {
     alert (i);
 }
 
+const NUMERO =5;
+for (let i =0; i <=10; i ++){
+    const RESULTADO = NUMERO * i;
+    console.log(NUMERO + " x " + i + "=" +RESULTADO);
+}
+
+/*
 // desde 1 al 10
 for (let i = 1; i <= 10; i ++) {
     alert (i);
@@ -250,7 +265,7 @@ for (let i = 1; i <= 10; i ++) {
 }
 */
 
-//while
+//while (ciclos condicionales)
 /*
 let repetir = true;
 while(repetir) {
