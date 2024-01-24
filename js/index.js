@@ -38,6 +38,7 @@ console.log(nombre)
 alert('Hola Martín!');
 */
 
+/*
 let numero = 15; //number
 let cadenaDeTexto = "MARTIN PALONSKY"; //string
 let booleanos = true; //boolean
@@ -46,6 +47,7 @@ let booleanos = true; //boolean
 
 
 const NOMBRE_APELLIDO = "MARTIN PALONSKY";
+*/
 
 //declaracion
 
@@ -54,9 +56,11 @@ const NOMBRE_APELLIDO = "MARTIN PALONSKY";
 //let edad;
 
 //inicializacion, proceso en el cual asignamos el valor inical de la variable
+/*
 let edad;
 
 edad = 25;
+*/
 
 //las variables siempre debe tener asignada un nombre que haga referencia al dato almacenado.
 
@@ -67,6 +71,7 @@ let numeroUno = 1;
 console.log(numeroUno);
 */
 
+/*
 let numeroUno = 4;
 let numeroDos = 5;
 
@@ -84,6 +89,7 @@ console.log(division);
 
 let resto = numeroDos % numeroUno;
 console.log(resto);
+*/
 
 //concatenacion
 
@@ -95,7 +101,7 @@ console.log(resto);
 
 
 //prompt, consola y alert
-
+/*
 let nombre = prompt("Ingrese su nombre");
 let apellido = prompt("Ingrese su apellido");
 
@@ -211,7 +217,7 @@ if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MARTIN") || (nombreIngresa
 
 //CICLOS E ITERACIONES
 //operador de incremento
-
+/*
 let x = 5;
 let y = ++x;
 console.log(y);
@@ -228,6 +234,7 @@ for (let i =0; i <=10; i ++){
     const RESULTADO = NUMERO * i;
     console.log(NUMERO + " x " + i + "=" +RESULTADO);
 }
+*/
 
 /*
 // desde 1 al 10
@@ -283,11 +290,12 @@ while(entrada != "ESC"){
 */
 
 //do...while
+/*
 let repetir = false;
 do{
     console.log("¡Solo una vez!");
 }while(repetir)
-
+*/
 /*
 let numeros = 0;
 do{
@@ -319,8 +327,12 @@ while(entrada != "ESC" ) {
 //FUNCIONES
 /*
 function saludar() {
-    console.log("¡Hola estudiantes!");
+    console.log("¡Hola fan de Meghan Trainor!");
 }
+
+saludar ();
+*/
+/*
 //solicitar un nombre
 let nombreIngresado = prompt("Ingresar nombre")
 alert("El nombre ingresado es " + nombreIngresado)
@@ -370,7 +382,7 @@ let resultado = sumar(5, 8);
 
 console.log(resultado)  // ⇒ 13
 */
-
+/*
 function calculadora(primerNumero, segundoNumero, operacion) {
     switch (operacion) {
         case "+":
@@ -452,3 +464,99 @@ const sumass  = (a, b) => { return a + b }
 const restass = (a, b) =>  a - b ;
 console.log( sumass(15,20) )
 console.log( restass(20,5) )
+*/
+
+//FUNCION
+/*
+function saludar (){
+    console.log("¡Hola fan de Meghan Trainor!")
+}
+
+saludar();
+
+function saludarPersona (nombre){
+    console.log("Hola, "+ nombre + "¿Cómo estás?");
+}
+
+saludarPersona("Meghan");
+*/
+
+//EJEMPLO 1 (variable de tipo local)
+/*
+function ingresarNombre (){
+    let ingresoDeNombre = prompt("Ingresar nombre:");
+    console.log("El nombre del sujeto es: " + ingresoDeNombre);
+}
+
+ingresarNombre();
+//ingresarNombre();
+*/
+
+/*
+//EJEMPLO 2 (variable de tipo global)
+let ingresoDeNombre = prompt("Ingresar nombre:");
+let ingresoDeApellido = prompt("Ingresar apellido:");
+let ingresoDeEdad = parseInt(prompt("Ingresar edad"));
+
+function ingresarDatos (nombre, apellido, edad){
+    console.log("El nombre del sujeto es: " + nombre + " El apellido es: " + apellido + " Tiene " + edad + "años");
+}
+
+ingresarDatos(ingresoDeNombre, ingresoDeApellido, ingresoDeEdad);
+*/
+
+
+/*
+let variableGlobal = "Soy la variable GLOBAL";
+
+function ejemploScoupe(){
+    let variableLocal = "Soy la variable LOCAL";
+    console.log("variableGlobal");
+    console.log("variableLocal");
+}
+
+console.log("variableGlobal");
+console.log("variableLocal");
+*/
+
+/*
+function ingresarNombre(){
+    let ingresoDelNombre = prompt("Acá tu nombre");
+    console.log("El nombre ingresado es: " + ingresoDelNombre)
+}
+
+let numero = 0;
+
+while(numero< 10){
+    ingresarNombre()
+    numero ++
+}
+
+ingresarNombre()
+*/
+
+/*
+function comprobarEdad(){
+    const EDAD = parseInt(prompt("Ingresar edad"));
+
+    if (EDAD >= 18){
+        return "Es mayor de EDAD"
+    } else {
+        return "No es mayor de EDAD"
+    }
+}
+
+const resultadoEdad = comprobarEdad();
+console.log(resultadoEdad);
+*/
+
+/*
+let suma = function (a,b){
+    return a * b;
+}
+
+console.log(suma(2,3));
+*/
+
+let suma = (a,b) => a + b;
+console.log(suma(5,7));
